@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/style 2.css">
+
+    <title>PRUEBA</title>
+</head>
+<body>
+
+  <div class="resolucion">
+
+    <div class="desktop">
+
+      <div class="container">
+
+        <div class="col-12 row">
+
+        <div class="col-4 bingo"></div>
+    
+        <div class="Cuadro-registro">
+          <div class="titulo">
+            <h1>¡Bienvenido! Registrate para comenzar</h1>
+            <div id="error-message"></div>
+
+          </div>
+          <form id="formulario-registro" action="php/registro.php" method="post">
+
+            <input type="text" id="username" name="username" placeholder="Nombre de usuario" required=""><br><br>
+          
+            <input type="email" id="email" name="email" placeholder="Introduce tu correo electronico" required=""><br><br>
+          
+            <input type="password" id="password" name="password" placeholder="Introduce tu contraseña" required=""><br><br>
+          
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirma tu contraseña" required=""><br><br>     
+          
+
+
+            <input type="submit" value="Registrarte">
+            <br>
+  
+  
+            <div class="registroAccount">
+            <p>O registrate con</p>
+            </div>
+  
+  
+            <div class="icons">
+              <i class="fa-brands fa-google"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+  
+  
+            <div class="yesAccount"><a>Ya tienes una cuenta? </a><a href="Login.html">iniciar sesion</a></div>
+
+          </form>
+        </div>
+  
+  
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/registro.js"></script>
+  
+
+  </div>
+
+ 
+</body>
+</html>

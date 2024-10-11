@@ -1,0 +1,59 @@
+body {
+    background-image: url(../img/FOndo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    padding: 30px; /* Espaciado interno */
+}
+
+h1 {
+    color: #343a40; /* Color del título */
+    margin-bottom: 20px;
+}
+
+#roomDetails {
+    margin-bottom: 30px; /* Espaciado entre detalles de la sala */
+}
+
+#roomName {
+    font-size: 24px; /* Tamaño del nombre de la sala */
+    font-weight: bold;
+    color: #007bff; /* Color azul */
+}
+
+#roomCode, #hostName {
+    font-size: 18px; /* Tamaño del texto */
+    color: #6c757d; /* Color gris */
+}
+
+#connectedUsers {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #dee2e6; /* Borde del contenedor de usuarios */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #f8f9fa; /* Color de fondo del contenedor de usuarios */
+}
+
+button {
+    margin-top: 20px; /* Espaciado superior */
+    background-color: #28a745; /* Color verde */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño del texto */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+button:hover {
+    background-color: #218838; /* Color verde más oscuro al pasar el ratón */
+}

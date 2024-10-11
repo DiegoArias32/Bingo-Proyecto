@@ -1,0 +1,101 @@
+body {
+  background-image: url(../img/FOndo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  max-width: 500px; /* Aumentar el ancho del contenedor */
+  margin: auto;
+  background: rgba(255, 255, 255, 0.95); /* Fondo blanco semi-transparente */
+  padding: 30px 40px; /* Espaciado interno */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+  transition: transform 0.3s ease; /* Transición suave */
+}
+
+.container:hover {
+  transform: translateY(-5px); /* Elevación al pasar el ratón */
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px; /* Aumento del tamaño de fuente */
+  color: #343a40; /* Color del título */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+label {
+  display: block;
+  margin: 15px 0 5px; /* Margen superior y margen inferior */
+  font-weight: bold; /* Negrita para etiquetas */
+  color: #495057; /* Color del texto de las etiquetas */
+}
+
+input, select {
+  width: 100%;
+  padding: 12px; /* Espaciado interno */
+  margin-bottom: 20px; /* Mayor margen inferior */
+  border: 1px solid #ced4da; /* Borde gris claro */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de fuente más grande */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Transición para el borde y la sombra */
+}
+
+input:focus, select:focus {
+  border-color: #80bdff; /* Color del borde al enfocar */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra suave al enfocar */
+  outline: none; /* Quitar el contorno predeterminado */
+}
+
+#formButtons {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  margin-top: 20px; /* Espaciado superior */
+}
+
+button {
+  width: 48%;
+  padding: 12px; /* Aumento del espaciado interno */
+  margin: 0 5px; /* Espaciado entre botones */
+  background-color: #007bff; /* Color azul */
+  color: white; /* Color del texto */
+  border: none;
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Transición suave */
+}
+
+button:hover {
+  background-color: #0056b3; /* Color más oscuro al pasar el ratón */
+  transform: translateY(-2px); /* Elevación al pasar el ratón */
+}
+
+button:focus {
+  outline: none; /* Quitar el contorno al enfocar */
+}
+
+.salir {
+  color: white; /* Color del texto */
+  background-color: red; /* Color de fondo */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+  position: fixed; /* Posicionamiento fijo */
+  bottom: 20px; /* Distancia desde el fondo */
+  left: 15px; /* Distancia desde la izquierda */
+  border-radius: 50px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de fuente */
+  width: 200px;
+  height: 80px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Animación suave */
+}
+
+.salir:hover {
+  background-color: darkred; /* Cambiar el color al pasar el ratón */
+  transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+}
+
+

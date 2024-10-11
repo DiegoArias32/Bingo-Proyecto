@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/configuracion.css">
+    <title>Configuracion</title>
+</head>
+<body>
+  <h1 class="title">Configuracion</h1>
+  <div class="container">
+    <div class="menu-amigos">
+      <div class="imagen-contenedor">
+        <img src="img/amigos.png" alt="amigos" class="imagen">
+        <div class="config-box">
+          <h2>Configuración</h2>
+          <div class="language-selector">
+            <button id="prevLang">&lt;</button>
+            <span id="currentLang">Spanish</span>
+            <button id="nextLang">&gt;</button>
+          </div>
+          <label for="voices">Voces:</label>
+          <input type="checkbox" id="voices" checked>
+          <label for="sounds">Sonidos:</label>
+          <input type="checkbox" id="sounds" checked>
+
+          <div><button id="logout">Cerrar Sesión</button></div>
+        </div>
+        <form class="forma-boton" action="Inicio.html" >
+          <button class="button-volver" >VOLVER</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/configuracion.js"></script>
+</body>
+</html>

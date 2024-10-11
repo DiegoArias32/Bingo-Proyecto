@@ -1,0 +1,122 @@
+body {
+    margin: 300px;
+    padding: 0;
+    background-image: url(../img/Fondo-Carga.jpeg);
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: 100% 135%;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    color: #fff;
+    animation: fondo 10s ease-in-out infinite;
+}
+
+@keyframes fondo {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transform: scale(0);
+    animation: entrada 0.5s ease-out forwards;
+}
+
+@keyframes entrada {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.loading-text-container {
+    margin-bottom: 10px;
+}
+
+.loading-tip {
+    font-size: 35px;
+    font-weight: 400;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    animation: entrada-consejo 1s ease-out forwards;
+}
+
+@keyframes entrada-consejo {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.loading-bar {
+    width: 750px; /* Aumenta el ancho del contenedor */
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transform: scaleX(0);
+    animation: progreso 2s ease-out forwards;
+    opacity: 0;
+    animation: entrada-barra 1s ease-out forwards;
+}
+
+@keyframes progreso {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes entrada-barra {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.progress {
+    width: 0%; /* Aumenta el ancho inicial de la barra de progreso */
+    height: 100%;
+    background-color: #ffdd00; 
+    transition: width 0.5s ease;
+}
+
+.loading-text {
+    font-size: 23px;
+    font-weight: 600;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+
+#background-music {
+    display: none; /* Ocultamos el elemento audio */
+  }

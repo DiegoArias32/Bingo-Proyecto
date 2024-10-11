@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/login.css">
+   
+
+    <title>Bingo Of the Gods</title>
+</head>
+<body>
+
+  <div class="resolucion">
+    
+    <div class="desktop">
+      <div class="container">
+
+    
+        <div class="col-12 row">
+    
+          <div class="col-4 bingo"></div>
+    
+          <div class="Cuadro-login">
+            <div class="titulo">
+              <h1>¡Bienvenido! ¡Me alegra verte de nuevo!</h1>
+              <div id="error-message"></div>
+            </div>
+            <form id="formulario-login" action="php/login.php" method="post">
+    
+              <input type="email" id="username" name="username" placeholder="Introduce tu correo electronico" required=""><br><br>
+              <input type="password" id="password" name="password" placeholder="Introduce tu contraseña" required=""><br><br>          
+              
+    
+              <div class="Recuperar"> 
+                <a href="OlvidasteTuContraseña.html"><p>¿Olvidaste tu contraseña?</p></a>
+              </div>
+    
+              <input type="submit" value="Iniciar Sesion">
+              <br>
+    
+    
+              <div class="LoginAccount">
+              <p>O inicia sesión con</p>
+              </div>
+    
+    
+              <div class="icons">
+                <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+    
+    
+              <div class="notAccount"><a>No tienes una cuenta? </a><a href="Registro.html">Registrate</a></div>
+            </form>
+          </div>
+    
+    
+        </div>
+    
+    
+        
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/login.js"></script>
+
+</body>
+</html>

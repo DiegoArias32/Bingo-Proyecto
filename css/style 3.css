@@ -1,0 +1,176 @@
+body {
+  background-image: url(../img/login1.png);
+  background-size: 100vw 160vh; /* ajusta la imagen al ancho y alto de la pantalla */
+  background-repeat: no-repeat;
+}
+
+
+.container{
+  width: 100%;
+  height: 110%;
+}
+
+.bingo {
+  background-image: url(../img/prueba2.png);
+  margin-top: 100px;
+  width: 564px;
+  height: 800px;
+  margin-left: 100px;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  }
+
+    /*ESTE ES PARA QUE SE VEA BIEN EN COMPUTADOR*/
+
+  .Cuadro-contrasena {
+    background-color: #F6F4FF;
+    margin-top: 100px;
+    margin-left: 0px;   /* Para Separar de la imagen del bingo. */
+    height: 660px;
+    width: 510px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /*ESTE ES PARA QUE SE VEA BIEN EN MOVIL*/
+
+  .Cuadro-contrasena-movil {
+    background-color: #f6f4ff77;
+    margin-top: 0; /* ajusta el margen superior a 0 */
+    margin-left: 0; /* ajusta el margen izquierdo a 0 */
+    width: 100%; /* ajusta el ancho al 100% de la pantalla */
+    height: 95vh; /* ajusta el alto al 100% de la pantalla */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #formulario-contrasena {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  #formulario-contrasena input[type="email"] {
+    width: 110%;
+    height: 60px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #formulario-restablecer input[type="password"] {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 50px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  #formulario-contrasena input[type="submit"] {
+    width: 110%;
+    background-color: #1E232C;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+    margin-bottom: 50px;
+  }
+
+  #formulario-restablecer button[type="submit"] {
+    width: 100%;
+    background-color: #1E232C;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+    margin-bottom: 50px;
+  }  
+
+.titulo{
+  margin-top: 20px;
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+.subTitulo{
+    margin-top: 10px;
+  font-style: italic;
+  margin-bottom: 30px;
+  color: #22252c;
+font-size: 18px;
+margin-bottom: 55px;
+}
+
+.mensaje{
+  margin-bottom: 6px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+
+.Recuperar{
+  margin-top: -30px;
+  margin-left: 238px;
+  color: #6A707C;
+  font-weight: bold;
+}
+
+.Recuperar-movil{
+  margin-top: -30px;
+  margin-left: 160px;
+  color: #6A707C;
+  font-weight: bold;
+}
+
+.yesAccount{
+  margin-top: 6px;
+}
+
+.icono {
+  text-align: center; /* Centra el contenido del div */
+}
+
+.icono i {
+  margin: 0 auto; /* Centra el ícono de candado */
+  display: block; /* Convierte el ícono en un elemento de bloque para centrarlo */
+}
+
+.icono p {
+  font-size: 14px; /* Tamaño de fuente para el párrafo */
+  margin-top: 10px; /* Agrega un margen superior para separar del ícono */
+}
+
+/**Movil**/
+
+@media (max-width: 767px) {
+  .desktop {
+      display: none;
+  }
+  .tablet {
+      display: none;
+  }
+}
+
+
+
+
+/**Escritorio**/
+
+@media (min-width: 991px) {
+  .tablet {
+      display: none;
+  }
+  .movil {
+      display: none;
+  }
+}

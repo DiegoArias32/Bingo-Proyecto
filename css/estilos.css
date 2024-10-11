@@ -1,0 +1,195 @@
+/**
+ * Proyecto Bingo
+ * autores: Diego De Jesus Arias Gonzalez
+ * Santiago Gonzalez Vasquez
+ * Juan Esteban Huertas
+ * fecha: 27 de junio de 2024
+ */
+
+/* Container styles */
+.container {
+    max-width: 76%;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Title styles */
+  .titulo-bingo, .titulo-bingo-2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #ccc;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #f7f7f7;
+    display: inline-block;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+  
+  /* Strikethrough text */
+  .tachado {
+    text-decoration-line: line-through;
+    text-decoration-color: black;
+  }
+  
+  /* Bingo table styles */
+  .bingo-table {
+    border-collapse: separate;
+    border-spacing: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+  }
+  
+  .bingo-table th, .bingo-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    width: 20%;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  /* Cell styles */
+  .celda, .B, .I, .N, .G, .O {
+    width: 55px; /* Ancho de celda */
+    height: 55px; /* Alto de celda */
+    margin: 4px; /* Margen */
+    border: 2px solid #000; /* Borde */
+    border-radius: 15px; /* Radio de borde */
+    display: flex; /* Display flex para centrar contenido */
+    justify-content: center; /* Alinear contenido al centro */
+    align-items: center; /* Alinear contenido al centro */
+    background-color: #fff; /* Fondo blanco */
+    font-size: 24px; /* Tamaño de fuente */
+    font-weight: bold; /* Peso de fuente */
+    color: #333; /* Color de texto */
+    text-align: center; /* Alinear texto al centro */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .celda:hover, .B:hover, .I:hover, .N:hover, .G:hover, .O:hover {
+    background-color: #ccc; /* Fondo gris claro al pasar el mouse */
+    cursor: pointer; /* Cursor de mano */
+  }
+  
+  /* Letter-specific styles */
+  .B {
+    background-color: #0099cc; /* Fondo azul claro para la letra B */
+    color: #fff; /* Texto blanco */
+  }
+  
+  .I {
+    background-color: #ff9900; /* Fondo naranja claro para la letra I */
+    color: #fff; /* Texto blanco */
+  }
+  
+  .N {
+    background-color: #33cc33; /* Fondo verde claro para la letra N */
+    color: #fff; /* Texto blanco */
+  }
+  
+  .G {
+    background-color: #6666cc; /* Fondo azul oscuro para la letra G */
+    color: #fff; /* Texto blanco */
+  }
+  
+  .O {
+    background-color: #ffcc00; /* Fondo amarillo claro para la letra O */
+    color: #fff; /* Texto blanco */
+  }
+  
+  .celda p {
+    margin: 0;
+  }
+  
+  /* Form styles */
+  .forma {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .formulario, .respuesta {
+
+    border-radius: 6px;
+    margin-left: 10px;
+    padding: 17px;
+  }
+  
+  .respuesta.col-3 {
+    width: 95px; /* ajusta el ancho a 150px */
+    flex-shrink: 0; /* evita que el elemento se reduzca demasiado */
+  }
+  
+  .header__title {
+    width: 200px;
+    font-size: 24px;
+    font-weight:bold;
+    margin-bottom: 10px;
+  }
+  
+  body {
+    background-image: linear-gradient(to bottom, #f7f7f7, #ccccff);
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+  }
+
+
+  /* Estilos generales para los botones */
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para el botón de play */
+  #play-button {
+    background-color: #4CAF50;
+    color: #fff;
+    transition: background-color 0.3s ease; /* Animación de fondo */
+  }
+  
+  #play-button:hover {
+    background-color: #3e8e41;
+  }
+  
+  #play-button:active {
+    transform: scale(0.9); /* Animación de presión */
+  }
+  
+  #play-button[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transition: opacity 0.3s ease; /* Animación de opacidad */
+  }
+  
+  /* Estilos para el botón de stop */
+  #stop-button {
+    background-color: #FF69B4;
+    color: #fff;
+    transition: background-color 0.3s ease; /* Animación de fondo */
+  }
+  
+  #stop-button:hover {
+    background-color: #FF3737;
+  }
+  
+  #stop-button:active {
+    transform: scale(0.9); /* Animación de presión */
+  }
+  
+  #stop-button[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transition: opacity 0.3s ease; /* Animación de opacidad */
+  }

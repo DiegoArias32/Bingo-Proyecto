@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Sala de Bingo</title>
+    <link rel="stylesheet" href="css/crearSala.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crear Sala de Bingo</h1>
+        <form id="createRoomForm">
+            <label for="roomName">Nombre de la Sala:</label>
+            <input type="text" id="roomName" name="room_name" required>
+
+            <label for="playersNumber">Número de Jugadores:</label>
+            <input type="number" id="playersNumber" name="players_number" min="1" required>
+
+            <label for="pricePerCard">Precio del Cartón:</label>
+            <input type="number" id="pricePerCard" name="price_per_card" step="0.01" required>
+
+            <label for="roomVisibility">Visibilidad:</label>
+            <select id="roomVisibility" name="room_visibility" required>
+                <option value="public">Pública</option>
+                <option value="private">Privada</option>
+            </select>
+
+            <div id="formButtons">
+                <button type="button" class="crear" onclick="createRoom()">Crear Sala</button>
+            </div>
+        </form>
+    </div>
+
+    <button type="button" class="salir" onclick="window.location.href='inicio2.html'">Salir</button>
+
+    <script src="js/crearSala.js"></script>
+</body>
+</html>

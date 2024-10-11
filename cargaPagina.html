@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla de Carga</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/carga.css">
+</head>
+<body>
+    <audio id="background-music" loop autoplay>
+        <source src="musica/Musica1.mp3" type="audio/mp3">
+        Tu navegador no admite el elemento audio.
+      </audio>
+    <div class="loading-container">
+        <div class="loading-text-container">
+            <p class="loading-tip" id="tip"></p>
+        </div>
+        <div class="loading-bar">
+            <div class="progress"></div>
+        </div>
+        <p class="loading-text">CARGANDO, POR FAVOR ESPERE</p>
+    </div>
+
+    <script src="js/carga.js"></script>
+
+</body>
+</html>

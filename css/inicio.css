@@ -1,0 +1,356 @@
+body {
+  background-image: url(../img/FOndo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vh;
+    text-align: center;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 20px 50px;
+    margin: 10px;
+    background-color: #9f5713;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #000000;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+  
+  .button-Amigos{
+    display: inline-block;
+    padding: 20px 50px;
+    margin: 10px;
+    background-color: #9f5713;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #000000;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+
+  .button-Top{
+    display: inline-block;
+    padding: 20px 50px;
+    margin: 10px;
+    background-color: #9f5713;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #000000;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+
+  .button:hover {
+    background-color: #ff0000;
+  }
+  
+  .button-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    height: 200px;
+  }
+
+
+
+  .button-MisionesDiarias {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+  .button-Tienda {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .button-RecompensaDiaria {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .Money {
+    position: fixed; /* Posicionamiento fijo */
+    top: 55px; /* Distancia desde el top */
+    right: 20px; /* Distancia desde la derecha */
+    display: flex; /* Para alinear el ícono y el texto en una fila */
+    align-items: center; /* Centrar verticalmente */
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  #monedas {
+    font-size: 24px; /* Tamaño de fuente */
+    color: #333; /* Color del texto */
+  }
+  
+  #monedas img {
+    width: 58px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantener la proporción de la imagen */
+    margin-right: 5px; /* Espacio entre la imagen y el texto */
+  }
+  
+
+  
+  .info-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #000000;
+    text-align: center;
+  }
+  
+  .button-Ajustes{
+    margin-right: 180vh;
+    margin-top: 5vh;
+  }
+
+  .foto-perfil {
+    display: inline-block;
+    margin: 15vh 0;
+    margin-top: -1vh;
+    height: 22vh;
+    width: 21vh;
+    border-radius: 50%;
+    background-color: #ffffff;
+    padding: 18px;
+    box-shadow: 2px 2px 5px #000000;
+  }
+  
+  .foto-perfil i {
+    margin: 1vh;
+    font-size: 15vh;
+    color: #ff0000;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-right .bingo-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+  }
+  
+  .header-right .bingo-icon img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .header-right .bingo-icon span {
+    color: white;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  
+  .header-right .score {
+    background-color: #f08080;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #000000;
+  }
+  
+  .header-right .score span {
+    color: white;
+    font-size: 14px;
+  }
+  
+  .image-container {
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #000000;
+  }
+  
+  .image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+  
+  .image-container .overlay .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .image-container .overlay .description {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 14px;
+  }     
+
+
+.UsernameNickname{
+    margin-top: -12vh;
+    font-size: 30px;
+    border-radius: 50px;
+}
+
+
+
+.UsernameNickname input[type="text"] {
+  display: inline-block;
+  background-color: #9f5713;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #000000;
+  cursor: pointer;
+  width: 36vh;
+  height: 10vh;
+  text-align: center;
+  border-radius: 50px;
+}
+  
+.salir {
+  color: white; /* Color del texto */
+  background-color: red; /* Color de fondo */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+  position: fixed; /* Posicionamiento fijo */
+  bottom: 20px; /* Distancia desde el fondo */
+  left: 20px; /* Distancia desde la izquierda */
+  border-radius: 50px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de fuente */
+  width: 200px;
+  height: 80px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Animación suave */
+}
+
+.salir:hover {
+  background-color: darkred; /* Cambiar el color al pasar el ratón */
+  transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+}
+
+
+
+.input-group {
+  position: relative;
+  border-radius: 50px;
+}
+
+.input-group-addon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.input-group-addon i {
+  font-size: 30px;
+  color: #000000;
+  border-radius: 50px;
+}
+
+  @media (orientation: portrait) {
+    .desktop {
+        display: none;
+    }
+    .laptop {
+        display: none;
+    }
+  }
+
+
+  
+  @media (min-width: 1400px) {
+    .laptop {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+  }
+  
+
+
+  .button-Ajustes {
+    text-decoration: none; /* Sin subrayado en el enlace */
+    color: #333; /* Color del texto */
+    font-size: 24px; /* Tamaño de fuente más grande */
+    display: flex; /* Para alinear íconos y texto en una fila */
+    align-items: center; /* Centrar verticalmente */
+    position: fixed; /* Posicionamiento fijo */
+    top: 10px; /* Distancia desde el top */
+    left: 20px; /* Distancia desde el left */
+  }
+  
+  .button-Ajustes i {
+    margin-right: 5px; /* Espacio entre el ícono y el texto */
+    font-size: 58px; /* Tamaño del ícono más grande */
+  }
+  

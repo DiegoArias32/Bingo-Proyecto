@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/style 3.css">
+    <title>PRUEBA</title>
+</head>
+<body>
+
+  <div class="resolucion">
+    <div class="desktop">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 bingo"></div>
+          <div class="Cuadro-contrasena">
+            <div class="titulo">
+              <h1><strong>¿Has olvidado tu contraseña?</strong></h1>
+            </div>
+            <div class="subTitulo">
+              ¡No te preocupes! Aveces puede ocurrir. Por favor ingrese la dirección de correo electrónico vinculada a su cuenta.
+            </div>
+            <div class="mensaje">
+              <p id="error-message"></p>
+            </div>
+            <form id="formulario-contrasena" action="php/enviarCorreo.php" method="post">
+              <input type="email" id="username" name="username" placeholder="Introduce tu correo electrónico" required=""><br><br>
+              <input type="submit" value="Enviar código">
+
+              <div class="icono">
+                <i class="fas fa-lock fa-2x"></i>
+                <p>Restablecer contraseña de forma segura con código de verificación enviado a tu correo electrónico.</p>
+              </div>
+            
+              <div class="yesAccount"><a>Ya tienes una cuenta? </a><a href="Login.html">iniciar sesión</a></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/enviarCorreo.js"></script>
+</body>
+</html>

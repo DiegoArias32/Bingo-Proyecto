@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configuración</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #f0c040;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .config-box {
+      background-color: #222;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      color: #eee;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="checkbox"] {
+      -webkit-appearance: none;
+      appearance: none;
+      background-color: #444;
+      border: none;
+      border-radius: 5px;
+      height: 20px;
+      width: 40px;
+      outline: none;
+      cursor: pointer;
+      position: relative;
+    }
+
+    input[type="checkbox"]:checked {
+      background-color: #4CAF50;
+    }
+
+    input[type="checkbox"]::before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      height: 16px;
+      width: 16px;
+      background-color: #fff;
+      border-radius: 3px;
+      transition: 0.3s ease-in-out;
+    }
+
+    input[type="checkbox"]:checked::before {
+      transform: translateX(16px);
+    }
+
+    button {
+      background-color: #d9534f;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #c9302c;
+    }
+
+    .language-selector {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .language-selector button {
+      background-color: transparent;
+      border: none;
+      color: #eee;
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+
+    .language-selector span {
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="config-box">
+      <h2>Configuración</h2>
+
+      <div class="language-selector">
+        <button id="prevLang">&lt;</button>
+        <span id="currentLang">Español</span>
+        <button id="nextLang">&gt;</button>
+      </div>
+
+      <label for="voices">Voces:</label>
+      <input type="checkbox" id="voices" checked>
+
+      <label for="sounds">Sonidos:</label>
+      <input type="checkbox" id="sounds" checked>
+
+      <button id="logout">Cerrar Sesión</button>
+    </div>
+  </div>
+
+  <script>
+    // Simulación de datos de configuración (se podría obtener de un archivo JSON o base de datos)
+    let config = {
+      language: "Español",
+      voices: true,
+      sounds: true
+    };
+
+    // Obtener elementos del DOM
+    const currentLang = document.getElementById('currentLang');
+    const prevLangBtn = document.getElementById('prevLang');
+    const nextLangBtn = document.getElementById('nextLang');
+    const voicesCheckbox = document.getElementById('voices');
+    const soundsCheckbox = document.getElementById('sounds');
+    const logoutBtn = document.getElementById('logout');
+
+    // Eventos
+    prevLangBtn.addEventListener('click', () => {
+      // Cambiar idioma previo
+      config.language = "Inglés";
+      currentLang.textContent = config.language;
+    });
+
+    nextLangBtn.addEventListener('click', () => {
+      // Cambiar idioma siguiente
+      config.language = "Francés";
+      currentLang.textContent = config.language;
+    });
+    
+
+    voicesCheckbox.addEventListener('change', () => {
+      // Actualizar configuración de voces
+      config.voices = voicesCheckbox.checked;
+    });
+
+    soundsCheckbox.addEventListener('change', () => {
+      // Actualizar configuración de sonidos
+      config.sounds = soundsCheckbox.checked;
+    });
+
+    logoutBtn.addEventListener('click', () => {
+      // Cerrar sesión (se podría redirigir a una página de login o logout)
+      alert("Sesión cerrada");
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://www.mediafire.com/file/bfxt9pa6w0xmwiq
+
+http://www.mediafire.com/file/qlb8ccm16jigpxs
+
+
+http://www.mediafire.com/file/iy42o21p3183k1y
+
+
+http://www.mediafire.com/file/wxrz9m1efnykyxs
+
+
+
+
+
+
+
+
+
+
